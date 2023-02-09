@@ -146,4 +146,4 @@ var body: some View {
 }
 ```
 
-An interesting, albeit hacky, approach to achieve this functionality.
+An interesting, albeit hacky, approach to achieve this functionality. Of course if only the `contentOffset` functionality is needed the `GeometryReader` with `PreferenceKey` method can be used instead.
