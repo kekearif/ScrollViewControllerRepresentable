@@ -14,6 +14,9 @@
 		A803D3592994C9A800827BC4 /* ScrollViewControllerRepresentableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803D3582994C9A800827BC4 /* ScrollViewControllerRepresentableTests.swift */; };
 		A803D3632994C9A800827BC4 /* ScrollViewControllerRepresentableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803D3622994C9A800827BC4 /* ScrollViewControllerRepresentableUITests.swift */; };
 		A803D3652994C9A800827BC4 /* ScrollViewControllerRepresentableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803D3642994C9A800827BC4 /* ScrollViewControllerRepresentableUITestsLaunchTests.swift */; };
+		A803D3732994C9C700827BC4 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803D3722994C9C700827BC4 /* View+Extension.swift */; };
+		A803D3762994C9FF00827BC4 /* ScrollViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803D3752994C9FF00827BC4 /* ScrollViewControllerRepresentable.swift */; };
+		A803D3782994CA2800827BC4 /* ScrollViewUIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803D3772994CA2800827BC4 /* ScrollViewUIHostingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		A803D35E2994C9A800827BC4 /* ScrollViewControllerRepresentableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewControllerRepresentableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A803D3622994C9A800827BC4 /* ScrollViewControllerRepresentableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewControllerRepresentableUITests.swift; sourceTree = "<group>"; };
 		A803D3642994C9A800827BC4 /* ScrollViewControllerRepresentableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewControllerRepresentableUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A803D3722994C9C700827BC4 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		A803D3752994C9FF00827BC4 /* ScrollViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		A803D3772994CA2800827BC4 /* ScrollViewUIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewUIHostingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		A803D3462994C9A700827BC4 /* ScrollViewControllerRepresentable */ = {
 			isa = PBXGroup;
 			children = (
+				A803D3712994C9B400827BC4 /* Extensions */,
 				A803D3472994C9A700827BC4 /* ScrollViewControllerRepresentableApp.swift */,
 				A803D3492994C9A700827BC4 /* ContentView.swift */,
 				A803D34B2994C9A800827BC4 /* Assets.xcassets */,
@@ -125,6 +132,24 @@
 				A803D3642994C9A800827BC4 /* ScrollViewControllerRepresentableUITestsLaunchTests.swift */,
 			);
 			path = ScrollViewControllerRepresentableUITests;
+			sourceTree = "<group>";
+		};
+		A803D3712994C9B400827BC4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A803D3742994C9EB00827BC4 /* ScrollViewController */,
+				A803D3722994C9C700827BC4 /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A803D3742994C9EB00827BC4 /* ScrollViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A803D3752994C9FF00827BC4 /* ScrollViewControllerRepresentable.swift */,
+				A803D3772994CA2800827BC4 /* ScrollViewUIHostingController.swift */,
+			);
+			path = ScrollViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A803D3762994C9FF00827BC4 /* ScrollViewControllerRepresentable.swift in Sources */,
 				A803D34A2994C9A700827BC4 /* ContentView.swift in Sources */,
+				A803D3782994CA2800827BC4 /* ScrollViewUIHostingController.swift in Sources */,
+				A803D3732994C9C700827BC4 /* View+Extension.swift in Sources */,
 				A803D3482994C9A700827BC4 /* ScrollViewControllerRepresentableApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
