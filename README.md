@@ -3,7 +3,7 @@ contentOffset and begin/end dragging support for SwiftUI ScrollView
 
 The SwiftUI `ScrollView` currently lacks support for setting the content offset. There also isn't a way to determine if the user has started or finished dragging the `ScrollView`. I wanted to tap into the functionality of `UIScrollView` while still retaining the original composition of `ScrollView` in my SwiftUI code. By placing the `ScrollView` content in a `UIHostingController` and then converting it to a `UIViewControllerRepresentable`, it is possible to achieve this. The `UIHostingController` is defined as follows:
 
-```
+```swift
 import SwiftUI
 
 final class ScrollViewUIHostingController<Content>:
@@ -88,7 +88,7 @@ Since `ScrollView` is actually a `UIScrollView` wrapped for SwiftUI, we can loca
 
 The `UIViewControllerRepresentable` is defined as:
 
-```
+```swift
 import SwiftUI
 
 struct ScrollViewControllerRepresentable<Content>: UIViewControllerRepresentable where Content: View {
@@ -120,7 +120,7 @@ struct ScrollViewControllerRepresentable<Content>: UIViewControllerRepresentable
 
 Now an extension can be added to `View`:
 
-```
+```swift
 extension View {
 
     func UIScrollView(isScrolling: Binding<Bool>, contentOffset: Binding<CGPoint>) -> some View {
@@ -132,7 +132,7 @@ extension View {
 
 Finally at the call site:
 
-```
+```swift
 var body: some View {
     ScrollView {
         LazyVStack {
